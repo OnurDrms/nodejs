@@ -1,0 +1,89 @@
+  <div class="container">
+    <div class="row justify-content-center registerForm">
+      <div class="col-lg-4">
+      <form method="POST" action="/register">
+        <div class="mb-3">
+          <label for="firstName" class="form-label">First Name</label>
+          <input type="text" name="first_name" class="form-control" id="firstName">
+        </div>
+        <div class="mb-3">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input type="text" name="last_name" class="form-control" id="lastName">
+        </div>
+        <div class="mb-3">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 avatar">
+                <span class="form-label" onclick={$("#myfile").click()}>Select Picture</span>
+            </div>
+          </div>
+          <input type="file" id="myfile" accept="image/*" name="avatar" style="display: none;">
+        </div>
+        <div class="mb-3">
+          <span class="form-label">Phone</span>
+          <input type="tel" name="phone" class="form-control">
+        </div>
+        <div class="mb-3">
+          <div class="row">
+            <div class="col-lg-3 formElement">
+              <div class="row">
+                <div class="col-lg-12">
+                    <span class="form-label">Gender</span>
+                </div>
+                <div class="col-lg-12">
+                    <select name="gender" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                      <option selected>Select</option>
+                      <option value="1">Male</option>
+                      <option value="2">Female</option>
+                    </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 formElement">
+              <div class="row">
+                <div class="col-lg-12">
+                    <span class="form-label">User Type</span>
+                </div>
+                <div class="col-lg-12">
+                    <select name="receiver" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                      <option selected>Select</option>
+                      <option value="true">Receiver</option>
+                      <option value="false">Seller</option>
+                    </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 formElement">
+              <div class="row">
+                <div class="col-lg-12">
+                    <span class="form-label">Birthday</span>
+                </div>
+                <div class="col-lg-12">
+                    <input type="date" id="birthday" name="birthDate">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="emailInput" class="form-label">Email address</label>
+          <input type="email" name="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="passwordInput" class="form-label">Password</label>
+          <input type="password" name="password" class="form-control" id="passwordInput" aria-describedby="passwordHelp">
+          <div id="passwordHelp" class="form-text">Your password should be the shortest 8 characters, the longest 20 characters ,contain uppercase, lowercase letters and numbers.</div>
+        </div> 
+        <div class="mb-3">
+          <div class="row justify-content-center">
+            <div class="col-lg-4">
+                <button type="submit" class="btn btn-primary saveButton">Submit</button>
+            </div>
+          </div>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+  
